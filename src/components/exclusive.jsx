@@ -47,9 +47,7 @@ function Exclusive() {
 
     return (
         <div className="w-full py-8 px-4 md:px-8 lg:px-16">
-            {/* Enhanced Navigation Header */}
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-8">
-                {/* Title Section */}
                 <div className="flex items-center gap-3">
                     <div className="w-1.5 h-12 bg-gradient-to-b from-[#FC8A06] to-[#f7931e] rounded-full"></div>
                     <div>
@@ -62,7 +60,6 @@ function Exclusive() {
                     </div>
                 </div>
 
-                {/* Category Filter Pills */}
                 <div className="flex flex-wrap gap-3">
                     {categories.map((category) => (
                         <button
@@ -80,7 +77,6 @@ function Exclusive() {
                 </div>
             </div>
 
-            {/* Enhanced Carousel */}
             <div className="w-full max-w-[1400px] mx-auto">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
@@ -108,27 +104,22 @@ function Exclusive() {
                     {filteredSlides.map((slide, index) => (
                         <SwiperSlide key={index}>
                             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2">
-                                {/* Image */}
                                 <img 
                                     src={slide.img} 
                                     alt={slide.alt} 
                                     className="w-full h-72 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" 
                                 />
                                 
-                                {/* Gradient overlay - enhanced on hover */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 
-                                {/* Discount Badge */}
                                 <div className="absolute top-4 right-4 bg-[#FC8A06] text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                                     -40% OFF
                                 </div>
 
-                                {/* Category Tag */}
                                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                                     {slide.category}
                                 </div>
                                 
-                                {/* Text overlay - enhanced */}
                                 <div className="absolute bottom-0 left-0 right-0 p-6 z-10 transform transition-transform duration-500 group-hover:translate-y-0">
                                     <div className="flex items-center gap-2 mb-2">
                                         <div className="w-2 h-2 bg-[#FC8A06] rounded-full animate-pulse"></div>
@@ -152,7 +143,6 @@ function Exclusive() {
                                         <span>$$</span>
                                     </div>
                                     
-                                    {/* Hidden CTA that appears on hover */}
                                     <button className="mt-4 w-full bg-[#FC8A06] text-white py-2.5 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-[#e67e22]">
                                         Order Now
                                     </button>
@@ -163,7 +153,6 @@ function Exclusive() {
                 </Swiper>
             </div>
 
-            {/* View All Button */}
             <div className="flex justify-center mt-8">
                 <button className="px-8 py-3 bg-gradient-to-r from-[#FC8A06] to-[#f7931e] text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                     View All Restaurants

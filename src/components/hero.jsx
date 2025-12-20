@@ -6,7 +6,6 @@ function Hero() {
     return (
         <div className="ml-5 relative flex flex-row items-center bg-[#e7e6e6] mt-[50px] mx-5 h-[450px] w-[95%] rounded-2xl justify-between self-center p-5 max-md:max-w-[700px] max-md:w-auto max-md:mr-5 md:max-lg:min-w-[730px] md:max-lg:w-auto md:max-lg:self-center overflow-hidden">
             
-            {/* Background Section - hero-3 */}
             <div className="absolute w-[339px] h-[396px] right-0 top-65 -translate-y-1/2 bg-[#FC8A06] rounded-tl-[150px] rounded-br-2xl max-lg:hidden z-0">
                 <h1 className="mt-[15%]"></h1>
                 <li className="bg-white w-[220px] mt-4 ml-[15%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">  
@@ -26,7 +25,6 @@ function Hero() {
                 </li>
             </div>
 
-            {/* Content Section - hero-1 */}
             <div className="pl-8 max-md:justify-center max-md:text-center relative z-100">
                 <h5 className="text-lg">Order Restaurant food, takeaway and groceries.</h5>
                 <h1 className="pt-2.5 pb-5 text-4xl font-bold">
@@ -54,7 +52,6 @@ function Hero() {
                 </form>
             </div>
 
-            {/* Images Section - hero-2 */}
             <div className="relative max-md:hidden z-10">
                 <img 
                     className="h-80 absolute right-[330px] z-[2] top-[90px] rounded-2xl" 

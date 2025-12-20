@@ -2,7 +2,7 @@ import React from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 
 function Map() {
-    const center = { lat: 51.5074, lng: -0.1278 }; // London coordinates
+    const center = { lat: 51.5074, lng: -0.1278 }; 
     const [selected, setSelected] = React.useState(null);
 
     return (
@@ -47,7 +47,6 @@ function Map() {
                 </GoogleMap>
             </LoadScript>
 
-            {/* Floating Info Card */}
             <div className="absolute top-5 left-5 bg-[#0a0a2a] text-white py-10 px-5 rounded-xl max-w-[280px] font-sans shadow-2xl backdrop-blur-sm max-md:max-w-[250px] max-md:py-8 max-md:px-4">
                 <h2 className="m-0 mb-2.5 text-2xl font-bold">
                     McDonald's <span className="text-[#fc8a06]">South London</span>
@@ -70,7 +69,6 @@ function Map() {
                     </a>
                 </p>
 
-                {/* Decorative element */}
                 <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-[#fc8a06]/20 rounded-full blur-xl"></div>
             </div>
         </div>

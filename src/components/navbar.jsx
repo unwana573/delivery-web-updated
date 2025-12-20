@@ -16,13 +16,10 @@ function Navbar() {
 
   return (
     <>
-      {/* MAIN NAVBAR */}
       <div className="flex items-center justify-between bg-white shadow-md rounded-full px-6 py-4 w-[80%] mx-auto mt-4 max-md:w-[95%] max-md:rounded-2xl">
 
-        {/* Logo */}
         <img src={logo} alt="logo" className="h-10" />
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8">
           <NavLink to="/" className={({ isActive }) => isActive ? activeClass : linkClass}>
             <li>Home</li>
@@ -41,7 +38,6 @@ function Navbar() {
           </NavLink>
         </ul>
 
-        {/* Login Button (Desktop) */}
         <NavLink to="/Authentication" className={({ isActive }) => isActive ? activeClass : linkClass}>
         <button className="hidden md:flex items-center gap-2 bg-[#09092c] text-white px-6 py-3 rounded-full font-bold hover:bg-[#FC8A06] hover:scale-105 transition">
           <FontAwesomeIcon icon={faCircleUser} className="text-[#FC8A06]" />
@@ -49,7 +45,6 @@ function Navbar() {
         </button>
         </NavLink>
 
-        {/* Hamburger Icon */}
         <div
           className="md:hidden text-2xl cursor-pointer"
           onClick={() => setMenuOpen(true)}
@@ -58,12 +53,10 @@ function Navbar() {
         </div>
       </div>
 
-      {/* MOBILE DRAWER */}
       <div
         className={`fixed top-0 left-0 h-screen w-full bg-white z-999 transform transition-transform duration-300 ease-in-out
         ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        {/* Drawer Header */}
         <div className="flex justify-between items-center p-6">
           <img src={logo} alt="logo" className="h-10" />
           <FontAwesomeIcon
@@ -73,7 +66,6 @@ function Navbar() {
           />
         </div>
 
-        {/* Drawer Menu */}
         <ul className="flex flex-col gap-8 mt-10 px-6 text-lg">
           <NavLink to="/" onClick={() => setMenuOpen(false)} className={linkClass}>
             Home
@@ -92,7 +84,6 @@ function Navbar() {
           </NavLink>
         </ul>
 
-        {/* Drawer Login Button */}
         <NavLink to="/Authentication" onClick={() => setMenuOpen(false)}>
           <button className="mt-auto mx-6 mb-6 bg-[#FC8A06] text-white py-4 rounded-xl text-lg font-semibold flex items-center justify-center gap-2">
             <FontAwesomeIcon icon={faCircleUser} />

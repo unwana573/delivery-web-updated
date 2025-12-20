@@ -7,7 +7,6 @@ function Mac() {
     return (
         <div className="flex justify-center items-center bg-[#e7e6e6] max-w-full h-[450px] rounded-2xl mx-[5%] my-[5%] gap-[5%] px-8 max-md:h-auto max-md:py-10">
             
-            {/* Left Content Section */}
             <div className="flex-1 max-md:text-center max-md:justify-self-center">
                 <div>
                     <p className="text-[15px] text-gray-600 mb-2">
@@ -17,7 +16,6 @@ function Mac() {
                         McDonald's East London
                     </h1>
                     
-                    {/* Info Buttons */}
                     <div className="flex gap-5 flex-wrap max-md:flex-col max-md:items-center max-md:gap-3">
                         <button className="h-[50px] rounded-[25px] bg-[rgb(12,12,54)] text-white px-[30px] text-[15px] font-semibold cursor-pointer transition-all duration-300 hover:bg-[rgb(20,20,70)] hover:scale-105 hover:shadow-lg flex items-center gap-2 whitespace-nowrap">
                             <FontAwesomeIcon icon={faTableList} className="text-lg" />
@@ -31,7 +29,6 @@ function Mac() {
                 </div>
             </div>
 
-            {/* Right Image Section */}
             <div className="flex-1 flex justify-center items-center max-md:hidden">
                 <img 
                     src={burge} 

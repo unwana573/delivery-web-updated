@@ -12,11 +12,9 @@ import {
 function Footer() {
   return (
     <>
-      {/* MAIN FOOTER */}
       <footer className="bg-[#eee] px-16 py-8 mt-12 max-lg:px-6">
         <div className="flex justify-between gap-8 flex-wrap max-lg:flex-col">
 
-          {/* LEFT SECTION */}
           <div>
             <img src={logo} alt="logo" className="w-[130px] mb-4" />
 
@@ -30,7 +28,6 @@ function Footer() {
             </p>
           </div>
 
-          {/* MIDDLE SECTION */}
           <div>
             <h4 className="text-lg font-semibold mb-4">
               Get Exclusive Deals in your Inbox
@@ -74,7 +71,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* RIGHT SECTION */}
           <div className="flex gap-16 max-sm:flex-col max-sm:gap-6">
             <div>
               <h4 className="font-semibold mb-4">Legal Pages</h4>
@@ -111,7 +107,6 @@ function Footer() {
         </div>
       </footer>
 
-      {/* BOTTOM BAR */}
       <div className="bg-[#09092c] text-white px-16 py-4 flex justify-between flex-wrap max-lg:px-6 max-sm:flex-col max-sm:text-center max-sm:gap-2">
         <p className="text-sm">
           Order.uk Copyright 2024, All Rights Reserved.

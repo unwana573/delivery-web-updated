@@ -26,7 +26,6 @@ export default function SlidingAuthForm() {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="relative w-full max-w-4xl h-[500px] bg-white rounded-3xl shadow-2xl overflow-hidden">
         
-        {/* Sliding Black Panel */}
         <div 
           className={`absolute top-0 w-1/2 h-full bg-black text-white flex flex-col justify-center px-12 transition-all duration-700 ease-in-out z-10 ${
             isSignUp ? 'left-1/2' : 'left-0'
@@ -64,7 +63,6 @@ export default function SlidingAuthForm() {
           </button>
         </div>
 
-        {/* Sign In Form - Left Side */}
         <div 
           className={`absolute top-0 left-0 w-1/2 h-full flex flex-col justify-center px-12 transition-opacity duration-500 ${
             isSignUp ? 'opacity-0 pointer-events-none' : 'opacity-100'
@@ -136,7 +134,6 @@ export default function SlidingAuthForm() {
           </div>
         </div>
 
-        {/* Sign Up Form - Right Side */}
         <div 
           className={`absolute top-0 right-0 w-1/2 h-full flex flex-col justify-center px-12 transition-opacity duration-500 ${
             isSignUp ? 'opacity-100' : 'opacity-0 pointer-events-none'

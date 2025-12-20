@@ -47,7 +47,6 @@ function Info() {
     return (
         <div className="flex gap-2.5 max-w-[1350px] w-auto mx-[5%] my-[5%] shadow-[0px_4px_12px_rgba(0,0,0,0.2)] max-md:block max-md:text-center max-md:py-[50px] max-md:px-0 max-md:mb-[70px]">
             
-            {/* Delivery Tab */}
             <div
                 className={`flex-1 py-[60px] px-5 rounded-lg cursor-pointer transition-all duration-300 text-xl ${
                     activeTab === "delivery" 
@@ -70,7 +69,6 @@ function Info() {
                 </p>
             </div>
 
-            {/* Contact Tab */}
             <div
                 className={`flex-1 py-[60px] px-5 rounded-lg cursor-pointer transition-all duration-300 text-xl ${
                     activeTab === "contact" 
@@ -102,7 +100,6 @@ function Info() {
                 </p>
             </div>
 
-            {/* Operational Times Tab */}
             <div
                 className={`flex-1 py-[60px] px-5 rounded-lg cursor-pointer transition-all duration-300 text-xl ${
                     activeTab === "times" 

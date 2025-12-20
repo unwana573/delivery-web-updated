@@ -6,7 +6,6 @@ import Special_Offer from './pages/Special_Offer'
 import Home from './pages/Home'
 import Restaurant from './pages/Restaurant'
 import Track_Order from './pages/Track_Order'
-// import Footer from './components/footer'
 import Authentication from './pages/Authentication'
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
   return (
     <>
     <RouterProvider router={router}/>
-    {/* <Footer /> */}
     </>
   )
 }

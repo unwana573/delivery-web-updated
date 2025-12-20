@@ -5,7 +5,6 @@ import woman from "../assets/woman.jpg"
 import woman_1 from "../assets/woman_1.jpg"
 
 const Review = () => {
-    // --- Data and State ---
     const reviewsGridRef = useRef(null);
     
     const overallRating = 3.4;
@@ -59,7 +58,6 @@ const Review = () => {
         },
     ];
 
-    // --- Logic ---
     const handleScroll = (direction) => {
         if (reviewsGridRef.current) {
             const scrollContainer = reviewsGridRef.current;
@@ -77,9 +75,6 @@ const Review = () => {
         }
     };
     
-    // --- Nested Components ---
-    
-    /** Renders the star rating display. */
     const StarRating = ({ rating }) => {
         const fullStars = Math.floor(rating);
         const hasHalfStar = rating % 1 !== 0;
@@ -126,7 +121,6 @@ const Review = () => {
         );
     };
 
-    /** Component for a single customer review card. */
     const ReviewCard = ({ review }) => {
         return (
             <div className="bg-white p-6 rounded-xl shadow-lg flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
@@ -160,7 +154,6 @@ const Review = () => {
         );
     };
 
-    /** Navigation Arrow Button */
     const NavArrow = ({ direction, onClick }) => (
         <button 
             onClick={onClick}
@@ -184,12 +177,10 @@ const Review = () => {
         </button>
     );
 
-    // --- Main Return ---
     return (
         <div className="min-h-[70vh] py-5 px-2.5 my-[90px] flex justify-center items-start font-['Inter',sans-serif] bg-gray-100 sm:py-8 sm:px-8">
             <div className="w-full max-w-[1280px]">
                 
-                {/* Reviews Header and Navigation */}
                 <div className="flex justify-between items-center mb-10 px-0 lg:px-0 px-4">
                     <h2 className="text-3xl font-extrabold text-gray-800">
                         Customer Reviews
@@ -200,7 +191,6 @@ const Review = () => {
                     </div>
                 </div>
 
-                {/* Reviews Grid/Slider */}
                 <div 
                     className="flex flex-nowrap gap-6 justify-start overflow-x-scroll scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
                     ref={reviewsGridRef}
@@ -210,7 +200,6 @@ const Review = () => {
                     ))}
                 </div>
 
-                {/* Overall Rating Summary */}
                 <div className="mt-16 flex justify-center">
                     <div className="text-center">
                         <p className="text-7xl font-bold text-gray-800">

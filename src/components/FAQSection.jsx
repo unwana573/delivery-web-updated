@@ -36,7 +36,6 @@ function FAQSection() {
   return (
     <div className="py-[90px] px-[100px] rounded-xl font-sans max-w-[1150px] justify-center ml-[3%] mb-[5%] bg-[#c2c0c0] max-md:hidden">
       
-      {/* Tabs */}
       <div className="flex gap-5 mb-5 justify-center items-center flex-wrap">
         <h2 className="mb-5 text-[22px] font-bold w-full text-center">
           Know more about us!
@@ -87,11 +86,9 @@ function FAQSection() {
         </button>
       </div>
 
-      {/* FAQ Content */}
       {activeTab === "faq" && (
         <div className="flex gap-[30px] mb-5">
           
-          {/* Left Questions */}
           <div className="flex-1 flex flex-col gap-3">
             {questions.map((question) => (
               <button
@@ -108,7 +105,6 @@ function FAQSection() {
             ))}
           </div>
 
-          {/* Right Steps */}
           <div className="flex-[2] flex gap-4">
             {steps.map((step, index) => (
               <div 
@@ -132,7 +128,6 @@ function FAQSection() {
         </div>
       )}
 
-      {/* Content for other tabs */}
       {activeTab === "who" && (
         <div className="py-8 px-4 text-center">
           <p className="text-base text-[#555] leading-relaxed">
@@ -160,7 +155,6 @@ function FAQSection() {
         </div>
       )}
 
-      {/* Bottom Description */}
       {activeTab === "faq" && (
         <p className="text-center text-sm text-[#555] mt-2.5 leading-relaxed">
           Order.UK simplifies the food ordering process. Browse through our diverse menu,

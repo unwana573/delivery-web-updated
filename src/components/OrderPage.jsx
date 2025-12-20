@@ -271,7 +271,6 @@ export default function OrderPage() {
     <>
       <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] lg:grid-cols-[240px_1fr_340px] min-h-screen bg-gray-50 font-sans relative">
         
-        {/* Sidebar - Hidden on mobile */}
         <div className="hidden md:block bg-white p-5 border-r border-gray-200">
           <h2 className="text-2xl font-bold mb-7 text-gray-800">Menu</h2>
           
@@ -303,7 +302,6 @@ export default function OrderPage() {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="py-5 px-4 md:py-7 md:px-10 pb-[100px] md:pb-7">
           <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center mb-7 gap-4 md:gap-0">
             <h1 className="text-xl md:text-[28px] font-bold text-gray-800 m-0">
@@ -377,7 +375,6 @@ export default function OrderPage() {
           )}
         </div>
 
-        {/* Basket Sidebar - Desktop only */}
         <div className="hidden lg:flex flex-col bg-white border-l border-gray-200 py-7 px-5 h-screen sticky top-0">
           <div className="bg-orange-500 text-white py-3 px-4 rounded-lg flex items-center gap-2.5 mb-5 text-sm font-semibold">
             <Clock size={20} />
@@ -501,7 +498,6 @@ export default function OrderPage() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMobile && (
         <>
           <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 flex justify-around z-[100] shadow-[0_-2px_10px_rgba(0,0,0,0.1)]">
@@ -528,7 +524,6 @@ export default function OrderPage() {
             </button>
           </div>
 
-          {/* Mobile Menu Drawer */}
           {showMobileMenu && (
             <>
               <div className="fixed inset-0 bg-black/50 z-[200]" onClick={() => setShowMobileMenu(false)} />
@@ -573,7 +568,6 @@ export default function OrderPage() {
             </>
           )}
 
-          {/* Mobile Basket Drawer */}
           {showMobileBasket && (
             <>
               <div className="fixed inset-0 bg-black/50 z-[200]" onClick={() => setShowMobileBasket(false)} />
@@ -601,15 +595,15 @@ export default function OrderPage() {
                           <div className="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                             {item.qty}x
                           </div>
-                          <div className="flex-Continue19:021">
-<div className="flex justify-between mb-1">
-<p className="font-semibold text-[15px] m-0 text-gray-800">{item.name}</p>
-<p className="font-bold text-[15px] m-0 text-gray-800">£{(item.price * item.qty).toFixed(2)}</p>
-</div>
-{item.extra && <p className="text-xs text-gray-500 m-0">{item.extra}</p>}
-</div>
-</div>
-))}
+                          <div className="flex-1">
+                            <div className="flex justify-between mb-1">
+                              <p className="font-semibold text-[15px] m-0 text-gray-800">{item.name}</p>
+                              <p className="font-bold text-[15px] m-0 text-gray-800">£{(item.price * item.qty).toFixed(2)}</p>
+                            </div>
+                            {item.extra && <p className="text-xs text-gray-500 m-0">{item.extra}</p>}
+                          </div>
+                          </div>  
+                        ))}
                   <div className="mt-5 pt-5 border-t-2 border-gray-200">
                     <div className="flex justify-between mb-3 text-[15px]">
                       <span className="text-gray-500 font-semibold">Sub Total:</span>
@@ -665,7 +659,6 @@ export default function OrderPage() {
     </>
   )}
 
-  {/* Checkout Modal */}
   {showCheckout && !orderSent && (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[1000] p-5">
       <div className="bg-white rounded-2xl w-full max-w-[400px] max-h-[90vh] overflow-y-auto shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)]">
@@ -769,7 +762,6 @@ export default function OrderPage() {
     </div>
   )}
 
-  {/* Order Sent Modal */}
   {orderSent && (
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[1001] p-5">
       <div className="bg-white rounded-[20px] py-12 px-8 md:py-12 md:px-10 text-center max-w-[400px] w-full shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] animate-[slideIn_0.3s_ease-out]">
@@ -793,7 +785,6 @@ export default function OrderPage() {
     </div>
   )}
 
-  {/* Animations */}
   <style jsx>{`
     @keyframes slideIn {
       from {

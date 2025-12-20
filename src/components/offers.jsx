@@ -25,7 +25,6 @@ function Offer() {
 
   return (
     <div className="block w-[90%] mx-auto pt-[30px] mb-12">
-      {/* Header Section */}
       <div className="my-5">
         <ul className="flex items-center justify-between gap-[15%] flex-wrap mx-0 my-5 list-none p-0">
           <li>
@@ -43,7 +42,6 @@ function Offer() {
         </ul>
       </div>
 
-      {/* Tabs */}
       <div className="my-[30px]">
         <ul className="flex flex-wrap justify-center gap-5 text-base bg-[#f5f5f5] py-5 px-[30px] rounded-2xl mx-0 my-[30px] list-none max-md:overflow-x-auto max-md:whitespace-nowrap max-md:p-2.5 max-md:rounded-xl max-md:scrollbar-none max-md:[&::-webkit-scrollbar]:hidden max-lg:gap-4 max-lg:text-[0.95rem]">
           {tabs.map((tab) => (
@@ -62,7 +60,6 @@ function Offer() {
         </ul>
       </div>
 
-      {/* Content Display */}
       <div className="offers-content">
         {activeTab === "offers" ? (
           <div className="text-center mt-[50px] animate-[fadeIn_0.4s_ease-in-out]">
