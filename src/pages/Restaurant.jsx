@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Info from "../components/info";
 import Mac from "../components/mac";
 import Map from "../components/map";
@@ -12,6 +13,7 @@ function Restaurant(params) {
         <Info />
         <Map />
         <Review />  
+        <Footer />
         </>
     );
 }

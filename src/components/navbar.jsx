@@ -42,10 +42,12 @@ function Navbar() {
         </ul>
 
         {/* Login Button (Desktop) */}
+        <NavLink to="/Authentication" className={({ isActive }) => isActive ? activeClass : linkClass}>
         <button className="hidden md:flex items-center gap-2 bg-[#09092c] text-white px-6 py-3 rounded-full font-bold hover:bg-[#FC8A06] hover:scale-105 transition">
           <FontAwesomeIcon icon={faCircleUser} className="text-[#FC8A06]" />
           Login / Signup
         </button>
+        </NavLink>
 
         {/* Hamburger Icon */}
         <div
@@ -91,10 +93,12 @@ function Navbar() {
         </ul>
 
         {/* Drawer Login Button */}
-        <button className="mt-auto mx-6 mb-6 bg-[#FC8A06] text-white py-4 rounded-xl text-lg font-semibold flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faCircleUser} />
-          Login / Signup
-        </button>
+        <NavLink to="/Authentication" onClick={() => setMenuOpen(false)}>
+          <button className="mt-auto mx-6 mb-6 bg-[#FC8A06] text-white py-4 rounded-xl text-lg font-semibold flex items-center justify-center gap-2">
+            <FontAwesomeIcon icon={faCircleUser} />
+            Login / Signup
+          </button>
+        </NavLink>
       </div>
     </>
   );

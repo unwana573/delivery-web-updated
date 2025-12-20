@@ -5,6 +5,7 @@ import Fig from "../components/fig";
 import Hero from "../components/hero";
 import More from "../components/more";
 import Order from "../components/order";
+import Footer from "../components/footer";
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
         <Chef />
         <FAQSection />
         <Fig />
+        <Footer />
         </>
     );
 }
