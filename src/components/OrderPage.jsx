@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Clock, MapPin, Search, Plus, X, Menu } from 'lucide-react';
 
-export default function OrderPage() {
+function OrderPage() {
   const [activeCategory, setActiveCategory] = useState('Pizzas');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOrder, setSortOrder] = useState('none');
@@ -827,3 +827,5 @@ export default function OrderPage() {
 </>
 );
 }
+
+export default Orderpage;
