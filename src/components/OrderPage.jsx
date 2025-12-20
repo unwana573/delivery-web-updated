@@ -828,4 +828,4 @@ function OrderPage() {
 );
 }
 
-export default Orderpage;
+export default OrderPage

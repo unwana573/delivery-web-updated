@@ -1,4 +1,4 @@
-import OrderPage from "../components/Orderpage";
+import OrderPage from "../components/OrderPage";
 import Footer from "../components/footer";
 import Info from "../components/info";
 import Mac from "../components/mac";
