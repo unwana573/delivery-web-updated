@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-between bg-white shadow-md rounded-full px-6 py-4 w-[80%] mx-auto mt-4 max-md:w-[95%] max-md:rounded-2xl">
+      <div className="flex items-center justify-between bg-white shadow-md rounded-full px-6 py-4 w-[90%] mx-auto mt-4 max-md:w-[95%] max-md:rounded-2xl">
 
         <img src={logo} alt="logo" className="h-10" />
 

@@ -34,7 +34,7 @@ function FAQSection() {
   ];
 
   return (
-    <div className="py-[90px] px-[100px] rounded-xl font-sans max-w-[1150px] justify-center ml-[3%] mb-[5%] bg-[#c2c0c0] max-md:hidden">
+    <div className="py-[90px] px-[100px] rounded-xl font-sans max-w-[1140px] justify-center ml-[5%] mb-[5%] bg-[#c2c0c0] max-md:hidden">
       
       <div className="flex gap-5 mb-5 justify-center items-center flex-wrap">
         <h2 className="mb-5 text-[22px] font-bold w-full text-center">

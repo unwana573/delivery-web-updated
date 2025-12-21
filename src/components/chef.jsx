@@ -5,11 +5,11 @@ function Chef() {
     return (
         <div className="flex justify-center gap-6 mb-[5%] max-lg:ml-[2%] max-md:block max-md:ml-[5%] max-md:mt-[12%]">
 
-            <div className="relative max-w-[830px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
+            <div className="relative max-w-[700px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
                 <img 
                     src={chefImg} 
                     alt="Chef Partner" 
-                    className="w-full h-auto block object-cover max-md:w-[90%]"
+                    className="w-140 h-auto block object-cover max-md:w-[90%]"
                 />
 
                 <div className="absolute top-0 left-0 w-[70%] h-full bg-gradient-to-r from-[rgba(11,4,49,0.6)] to-transparent pointer-events-none"></div>
@@ -31,11 +31,11 @@ function Chef() {
                 </div>
             </div>
 
-            <div className="relative max-w-[830px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
+            <div className="relative max-w-[800px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
                 <img 
                     src={chefImg_1} 
                     alt="Delivery Partner" 
-                    className="w-full h-auto block object-cover max-md:w-[90%]"
+                    className="w-140 h-auto block object-cover max-md:w-[90%]"
                 />
 
                 <div className="absolute top-0 left-0 w-[70%] h-full bg-gradient-to-r from-[rgba(11,4,49,0.6)] to-transparent pointer-events-none"></div>

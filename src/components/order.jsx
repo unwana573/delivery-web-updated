@@ -29,7 +29,7 @@ function Order() {
     ];
 
     return (
-        <div className="w-full max-w-[1200px] my-[60px] mx-auto md:max-lg:my-10 md:max-lg:mx-10 md:max-lg:w-auto max-md:my-10 max-md:mx-10 max-md:w-auto">
+        <div className="w-full max-w-[1130px] my-[60px] mx-auto md:max-lg:my-10 md:max-lg:mx-10 md:max-lg:w-auto max-md:my-10 max-md:mx-10 max-md:w-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
                 Order.uk Popular Categories 😍
             </h1>

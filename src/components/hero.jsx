@@ -4,7 +4,8 @@ import hero_img from "../assets/Logo.png";
 
 function Hero() {
     return (
-        <div className="ml-5 relative flex flex-row items-center bg-[#e7e6e6] mt-[50px] mx-5 h-[450px] w-[95%] rounded-2xl justify-between self-center p-5 max-md:max-w-[700px] max-md:w-auto max-md:mr-5 md:max-lg:min-w-[730px] md:max-lg:w-auto md:max-lg:self-center overflow-hidden">
+        <>
+        <div className="ml-15 relative flex flex-row items-center bg-[#e7e6e6] mt-[50px] mx-5 h-[450px] w-[90%] rounded-2xl justify-between self-center p-5 max-md:max-w-[700px] max-md:w-auto max-md:mr-5 md:max-lg:min-w-[730px] md:max-lg:w-auto md:max-lg:self-center overflow-hidden">
             
             <div className="absolute w-[339px] h-[396px] right-0 top-65 -translate-y-1/2 bg-[#FC8A06] rounded-tl-[150px] rounded-br-2xl max-lg:hidden z-0">
                 <h1 className="mt-[15%]"></h1>
@@ -66,6 +67,7 @@ function Hero() {
             </div>
 
         </div>
+        </>
     );
 }
 
