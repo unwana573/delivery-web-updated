@@ -13,7 +13,6 @@ function Restaurant(params) {
         <Info />
         <Map />
         <Review />  
-        <Footer />
         </>
     );
 }

@@ -5,19 +5,19 @@ import Fig from "../components/fig";
 import Hero from "../components/hero";
 import More from "../components/more";
 import Order from "../components/order";
-import Footer from "../components/footer";
 
 function Home() {
     return (
         <>
-        <Hero />
-        <Exclusive />
-        <Order /> 
-        <More />
-        <Chef />
-        <FAQSection />
-        <Fig />
-        <Footer />
+        <div className="px-10">
+            <Hero />
+            <Exclusive />
+            <Order /> 
+            <More />
+            <Chef />
+            <FAQSection />
+            <Fig />
+        </div>
         </>
     );
 }

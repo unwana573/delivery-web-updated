@@ -13,7 +13,6 @@ function Track_Order(params) {
             <Info />
             <Map /> 
             <Review />
-            <Footer />
         </>
     );
 }

@@ -4,7 +4,7 @@ import google from "../assets/playstore.png"
 
 function More() {
     return (
-        <div className="flex justify-center items-center bg-[#e7e6e6] max-w-[89%] my-[50px] mx-auto py-[50px] px-5 rounded-2xl gap-10 max-lg:max-w-[95%] max-lg:py-10 max-lg:px-4 max-lg:gap-5 max-md:flex-col max-md:max-w-[95%] max-md:my-[30px] max-md:py-[30px] max-md:px-2.5">
+        <div className="flex justify-center items-center bg-[#e7e6e6] max-w-[90%] my-[50px] mx-auto py-[50px] px-5 rounded-2xl gap-10 max-lg:max-w-[95%] max-lg:py-10 max-lg:px-4 max-lg:gap-5 max-md:flex-col max-md:max-w-[95%] max-md:my-[30px] max-md:py-[30px] max-md:px-2.5">
             
             <div className="more-1">
                 <img 

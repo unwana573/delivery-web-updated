@@ -4,21 +4,24 @@ import chefImg_1 from "../assets/deliver.jpg"
 function Chef() {
     return (
         <div className="flex justify-center gap-6 mb-[5%] max-lg:ml-[2%] max-md:block max-md:ml-[5%] max-md:mt-[12%]">
-
-            <div className="relative max-w-[700px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
+            {/* Card 1 - Partner with us */}
+            <div className="relative max-w-207.5 rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
                 <img 
                     src={chefImg} 
                     alt="Chef Partner" 
-                    className="w-140 h-auto block object-cover max-md:w-[90%]"
+                    className="w-full h-auto block object-cover max-md:w-[90%]"
                 />
 
-                <div className="absolute top-0 left-0 w-[70%] h-full bg-gradient-to-r from-[rgba(11,4,49,0.6)] to-transparent pointer-events-none"></div>
+                {/* Gradient overlay */}
+                <div className="absolute top-0 left-0 w-[70%] h-full bg-linear-to-r from-[rgba(11,4,49,0.6)] to-transparent pointer-events-none"></div>
 
+                {/* Top tag */}
                 <div className="absolute top-3 left-3 bg-white text-black py-1.5 px-3 rounded-md text-sm font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.15)] z-[2]">
                     Earn more with lower fees
                 </div>
 
-                <div className="absolute bottom-5 left-5 text-white z-[2]">
+                {/* Content overlay */}
+                <div className="absolute bottom-5 left-5 text-white z-2">
                     <p className="m-0 text-sm text-[#ffa733]">
                         Signup as a business
                     </p>
@@ -31,19 +34,23 @@ function Chef() {
                 </div>
             </div>
 
-            <div className="relative max-w-[800px] rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
+            {/* Card 2 - Ride with us */}
+            <div className="relative max-w-207.5 rounded-xl overflow-hidden font-sans group max-md:mb-[6%] max-md:w-auto">
                 <img 
                     src={chefImg_1} 
                     alt="Delivery Partner" 
-                    className="w-140 h-auto block object-cover max-md:w-[90%]"
+                    className="w-full h-auto block object-cover max-md:w-[90%]"
                 />
 
+                {/* Gradient overlay */}
                 <div className="absolute top-0 left-0 w-[70%] h-full bg-gradient-to-r from-[rgba(11,4,49,0.6)] to-transparent pointer-events-none"></div>
 
+                {/* Top tag */}
                 <div className="absolute top-3 left-3 bg-white text-black py-1.5 px-3 rounded-md text-sm font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.15)] z-[2]">
                     Avail exclusive perks
                 </div>
 
+                {/* Content overlay */}
                 <div className="absolute bottom-5 left-5 text-white z-[2]">
                     <p className="m-0 text-sm text-[#ffa733]">
                         Signup as a rider

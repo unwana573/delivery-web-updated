@@ -4,9 +4,11 @@ import Rootlayout from './layout/Rootlayout'
 import Browse_Menu from './pages/Browse_Menu'
 import Special_Offer from './pages/Special_Offer'
 import Home from './pages/Home'
+// import Hero from './components/hero'
 import Restaurant from './pages/Restaurant'
 import Track_Order from './pages/Track_Order'
 import Authentication from './pages/Authentication'
+import Footer from './components/footer'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
   return (
     <>
     <RouterProvider router={router}/>
+    {/* <Hero /> */}
+    <Footer />
     </>
   )
 }
