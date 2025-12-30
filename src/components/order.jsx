@@ -104,7 +104,7 @@ function Order() {
 
     return (
         <div className="w-full py-20 px-4 bg-white">
-            <div className="max-w-[1400px] mx-auto">
+            <div className="max-w-350 mx-auto">
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-6">
                     <div className="max-w-2xl">
@@ -166,7 +166,7 @@ function Order() {
                         pauseOnMouseEnter: true
                     }}
                     loop={true}
-                    className="!pb-16"
+                    className="pb-16!"
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     breakpoints={{
                         320: { slidesPerView: 1, spaceBetween: 16 },
@@ -179,7 +179,7 @@ function Order() {
                         <SwiperSlide key={index}>
                             <div className="group relative rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-[#FC8A06] transition-all duration-500 cursor-pointer hover:shadow-xl">
                                 {/* Image Container */}
-                                <div className="relative h-[240px] overflow-hidden bg-gray-100">
+                                <div className="relative h-60 overflow-hidden bg-gray-100">
                                     <img 
                                         src={slide.img} 
                                         alt={slide.title} 
@@ -187,7 +187,7 @@ function Order() {
                                     />
                                     
                                     {/* Subtle Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/0 to-transparent"></div>
                                     
                                     {/* Delivery Time Badge */}
                                     <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg">
@@ -232,7 +232,7 @@ function Order() {
                 {/* Feature Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 pt-16 border-t border-gray-200">
                     <div className="flex items-start gap-4 group">
-                        <div className="w-12 h-12 bg-[#FC8A06]/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#FC8A06] transition-colors duration-300">
+                        <div className="w-12 h-12 bg-[#FC8A06]/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#FC8A06] transition-colors duration-300">
                             <Clock size={24} className="text-[#FC8A06] group-hover:text-white transition-colors" />
                         </div>
                         <div>
@@ -244,7 +244,7 @@ function Order() {
                     </div>
 
                     <div className="flex items-start gap-4 group">
-                        <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
+                        <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
                             <Star size={24} className="text-blue-500 group-hover:text-white transition-colors" />
                         </div>
                         <div>
@@ -256,7 +256,7 @@ function Order() {
                     </div>
 
                     <div className="flex items-start gap-4 group">
-                        <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 transition-colors duration-300">
+                        <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-green-500 transition-colors duration-300">
                             <MapPin size={24} className="text-green-500 group-hover:text-white transition-colors" />
                         </div>
                         <div>

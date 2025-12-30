@@ -1,7 +1,9 @@
-function Browse_Menu(params) {
+import NotFoundPage from '../components/NotFoundPage.jsx';
+
+function Browse_Menu() {
     return (
         <>
-        <h1>Browse Menu</h1>
+        <NotFoundPage />
         </>
     );
 }

@@ -4,17 +4,17 @@ import google from "../assets/playstore.png"
 
 function More() {
     return (
-        <div className="flex justify-center items-center bg-[#e7e6e6] max-w-[90%] my-[50px] mx-auto py-[50px] px-5 rounded-2xl gap-10 max-lg:max-w-[95%] max-lg:py-10 max-lg:px-4 max-lg:gap-5 max-md:flex-col max-md:max-w-[95%] max-md:my-[30px] max-md:py-[30px] max-md:px-2.5">
+        <div className="flex justify-center items-center bg-[#e7e6e6] max-w-full my-12.5 mx-auto py-12.5 px-5 rounded-2xl gap-10 max-lg:max-w-[95%] max-lg:py-10 max-lg:px-4 max-lg:gap-5 max-md:flex-col max-md:max-w-[95%] max-md:my-7.5 max-md:py-7.5 max-md:px-2.5">
             
             <div className="more-1">
                 <img 
                     src={couple} 
                     alt="Couple using app" 
-                    className="h-[350px] max-w-full object-contain max-lg:h-[300px] max-md:h-[250px] max-md:mb-2.5"
+                    className="h-87.5 max-w-full object-contain max-lg:h-75 max-md:h-62.5 max-md:mb-2.5"
                 />
             </div>
 
-            <div className="text-left max-w-[450px] max-md:text-center max-md:max-w-full max-md:px-2.5">
+            <div className="text-left max-w-112.5 max-md:text-center max-md:max-w-full max-md:px-2.5">
                 <h1 className="text-[50px] font-bold text-[rgb(5,5,48)] mb-1.5 max-lg:text-[40px] max-md:text-[32px]">
                     Ordering is more
                 </h1>
@@ -32,14 +32,14 @@ function More() {
                         <img 
                             src={apple} 
                             alt="Download on App Store" 
-                            className="h-[45px] cursor-pointer transition-transform duration-300 hover:scale-105"
+                            className="h-11.25 cursor-pointer transition-transform duration-300 hover:scale-105"
                         />
                     </li>
                     <li>
                         <img 
                             src={google} 
                             alt="Get it on Google Play" 
-                            className="h-[45px] cursor-pointer transition-transform duration-300 hover:scale-105"
+                            className="h-11.25 cursor-pointer transition-transform duration-300 hover:scale-105"
                         />
                     </li>
                 </ul>

@@ -197,8 +197,8 @@ export default function SlidingAuthForm() {
   );
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-gray-50 via-orange-50/20 to-gray-50 overflow-hidden">
-      <div className="relative w-full max-w-[1100px] bg-white rounded-3xl shadow-2xl overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-linear-to-br from-gray-50 via-orange-50/20 to-gray-50 overflow-hidden">
+      <div className="relative w-full max-w-275 bg-white rounded-3xl shadow-2xl overflow-hidden">
         
         {/* Animated Floating Elements */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -229,10 +229,10 @@ export default function SlidingAuthForm() {
           </div>
         </div>
 
-        <div className="relative flex flex-col lg:flex-row min-h-[700px]">
+        <div className="relative flex flex-col lg:flex-row min-h-175">
           
           {/* Left Panel - Info Section with Flip Animation and Curved Edge */}
-          <div className={`w-full lg:w-[45%] bg-gradient-to-br from-[#FC8A06] via-[#ff9920] to-[#FC8A06] p-8 lg:p-12 flex flex-col justify-center text-white relative overflow-hidden transition-all duration-700 ${
+          <div className={`w-full lg:w-[45%] bg-linear-to-br from-[#FC8A06] via-[#ff9920] to-[#FC8A06] p-8 lg:p-12 flex flex-col justify-center text-white relative overflow-hidden transition-all duration-700 ${
             isSignUp ? 'lg:order-2 lg:rounded-tl-[150px]' : 'lg:order-1 lg:rounded-tr-[150px]'
           }`}>
             
@@ -337,7 +337,7 @@ export default function SlidingAuthForm() {
                     <button
                       onClick={handleSubmit}
                       type="button"
-                      className="w-full py-4 bg-gradient-to-r from-[#FC8A06] to-[#ff9920] text-white rounded-xl font-bold hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                      className="w-full py-4 bg-linear-to-r from-[#FC8A06] to-[#ff9920] text-white rounded-xl font-bold hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                     >
                       Sign In
                     </button>
@@ -362,7 +362,7 @@ export default function SlidingAuthForm() {
                     <p className="text-gray-600">Fill in your details to get started</p>
                   </div>
 
-                  <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                  <div className="space-y-4 max-h-125 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                     <InputField icon={User} type="text" name="fullName" placeholder="Full Name" value={formData.fullName} error={errors.fullName} showSuccess={touched.fullName && formData.fullName && !errors.fullName && formData.fullName.length >= 3} />
                     <InputField icon={User} type="text" name="username" placeholder="Username" value={formData.username} error={errors.username} showSuccess={touched.username && formData.username && !errors.username && formData.username.length >= 3} />
                     <InputField icon={Mail} type="email" name="email" placeholder="Email Address" value={formData.email} error={errors.email} showSuccess={touched.email && formData.email && !errors.email && validateEmail(formData.email)} />
@@ -392,7 +392,7 @@ export default function SlidingAuthForm() {
                   <button
                     onClick={handleSubmit}
                     type="button"
-                    className="w-full py-4 mt-6 bg-gradient-to-r from-[#FC8A06] to-[#ff9920] text-white rounded-xl font-bold hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                    className="w-full py-4 mt-6 bg-linear-to-r from-[#FC8A06] to-[#ff9920] text-white rounded-xl font-bold hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                   >
                     Create Account
                   </button>

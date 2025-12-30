@@ -4,24 +4,24 @@ import hero_img from "../assets/Logo.png";
 
 function Hero() {
     return (
-        <div className="px-15">
-        <div className=" relative flex flex-row items-center bg-[#e7e6e6] mt-[50px] h-[450px] w-[100%] mx-auto rounded-2xl justify-between p-5 max-md:max-w-[800px] max-md:w-auto md:max-lg:min-w-[730px] overflow-hidden">
+        <div className="px-1">
+        <div className=" relative flex flex-row items-center bg-[#e7e6e6] mt-12.5 h-112.5 w-full mx-auto rounded-2xl justify-between p-5 max-md:max-w-200 max-md:w-auto md:max-lg:min-w-182.5 overflow-hidden">
 
             
-            <div className="absolute w-[339px] h-[396px] right-0 top-65 -translate-y-1/2 bg-[#FC8A06] rounded-tl-[150px] rounded-br-2xl max-lg:hidden z-0">
+            <div className="absolute w-84.75 h-99 right-0 top-65 -translate-y-1/2 bg-[#FC8A06] rounded-tl-[150px] rounded-br-2xl max-lg:hidden z-0">
                 <h1 className="mt-[15%]"></h1>
-                <li className="bg-white w-[220px] mt-4 ml-[15%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">  
-                    <img src={hero_img} alt="" className="h-[25px]" />
+                <li className="bg-white w-55 mt-4 ml-[15%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">  
+                    <img src={hero_img} alt="" className="h-6.25" />
                     <h6 className="text-[0.8rem] font-semibold">We've Received your order</h6>
                     <p className="text-xs font-extralight">Awaiting Restaurant acceptance</p>
                 </li>
-                <li className="bg-white w-[220px] mt-4 ml-[35%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">
-                    <img src={hero_img} alt="" className="h-[25px]" />
+                <li className="bg-white w-55 mt-4 ml-[35%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">
+                    <img src={hero_img} alt="" className="h-6.25" />
                     <h6 className="text-[0.8rem] font-semibold">Order Accepted</h6>
                     <p className="text-xs font-extralight">Your order will be delivered shortly</p>
                 </li>
-                <li className="bg-white w-[220px] mt-4 ml-[25%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">
-                    <img src={hero_img} alt="" className="h-[25px]" />
+                <li className="bg-white w-55 mt-4 ml-[25%] pl-4 pt-1.5 pb-1.5 rounded-2xl list-none">
+                    <img src={hero_img} alt="" className="h-6.25" />
                     <h6 className="text-[0.8rem] font-semibold">Your rider's nearby</h6>
                     <p className="text-xs font-extralight">They're almost there-get ready!</p>
                 </li>
@@ -56,12 +56,12 @@ function Hero() {
 
             <div className="relative max-md:hidden z-10">
                 <img 
-                    className="h-80 absolute right-[330px] z-[2] top-[90px] rounded-2xl" 
+                    className="h-80 absolute right-82.5 z-2 top-22.5 rounded-2xl" 
                     src={she} 
                     alt="hero-img" 
                 />
                 <img 
-                    className="z-[2] h-[380px] relative right-[400px] top-[58px]" 
+                    className="z-2 h-95 relative right-100 top-14.5" 
                     src={pizza}  
                     alt="hero-img" 
                 />

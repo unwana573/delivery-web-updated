@@ -34,7 +34,7 @@ function FAQSection() {
   ];
 
   return (
-    <div className="py-[90px] px-[100px] rounded-xl font-sans max-w-[1140px] justify-center ml-[5%] mb-[5%] bg-[#c2c0c0] max-md:hidden">
+    <div className="py-22.5 px-10 rounded-xl font-sans max-w-auto justify-center mb-[5%] bg-[#c2c0c0] max-md:hidden">
       
       <div className="flex gap-5 mb-5 justify-center items-center flex-wrap">
         <h2 className="mb-5 text-[22px] font-bold w-full text-center">
@@ -87,7 +87,7 @@ function FAQSection() {
       </div>
 
       {activeTab === "faq" && (
-        <div className="flex gap-[30px] mb-5">
+        <div className="flex gap-7.5 mb-5">
           
           <div className="flex-1 flex flex-col gap-3">
             {questions.map((question) => (
@@ -105,7 +105,7 @@ function FAQSection() {
             ))}
           </div>
 
-          <div className="flex-[2] flex gap-4">
+          <div className="flex-2 flex gap-4">
             {steps.map((step, index) => (
               <div 
                 key={index}
@@ -114,7 +114,7 @@ function FAQSection() {
                 <img 
                   src={step.img} 
                   alt={step.title} 
-                  className="w-[60px] mb-2.5 mx-auto"
+                  className="w-15 mb-2.5 mx-auto"
                 />
                 <h4 className="text-base my-2 font-bold text-gray-800">
                   {step.title}

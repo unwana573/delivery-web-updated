@@ -1,9 +1,9 @@
-import Hero from "../components/hero";
+import NotFoundPage from "../components/NotFoundPage.jsx";
 
 function Special_Offer(params) {
     return (
         <>
-            <Hero />
+            <NotFoundPage />
         </>
     );
 }
