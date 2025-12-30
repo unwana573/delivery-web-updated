@@ -164,7 +164,7 @@ export default function SlidingAuthForm() {
 
   const InputField = ({ icon: Icon, type, name, placeholder, value, showToggle, onToggleShow, error, showSuccess }) => (
     <div className="relative group">
-      <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border-2 transition-all duration-300 ${
+      <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border-5 transition-all duration-300 ${
         error ? 'border-red-400 bg-red-50' : 
         showSuccess ? 'border-green-400 bg-green-50' :
         'border-gray-200 bg-white focus-within:border-[#FC8A06] focus-within:bg-orange-50/30'
@@ -199,7 +199,7 @@ export default function SlidingAuthForm() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-linear-to-br from-gray-50 via-orange-50/20 to-gray-50 overflow-hidden">
       <div className="relative w-full max-w-275 bg-white rounded-3xl shadow-2xl overflow-hidden">
-        
+
         {/* Animated Floating Elements */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           {/* Sign In Shapes (Pizza slices and food items) */}
